@@ -1,0 +1,1 @@
+gzip -f -9 -c /home/ubuntu/hw/UKraft/docs/content/en/community/hackathons/sessions/behind-scenes/work/06-adding-filesystems/build/06-adding-filesystems_qemu-x86_64 >/home/ubuntu/hw/UKraft/docs/content/en/community/hackathons/sessions/behind-scenes/work/06-adding-filesystems/build/06-adding-filesystems_qemu-x86_64.gz

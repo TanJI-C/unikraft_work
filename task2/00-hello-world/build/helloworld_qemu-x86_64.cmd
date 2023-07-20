@@ -1,0 +1,1 @@
+""strip -s --output-target elf32-i386 /home/ubuntu/hw/UKraft/work/Unikraft/task2/00-hello-world/build/helloworld_qemu-x86_64.dbg -o /home/ubuntu/hw/UKraft/work/Unikraft/task2/00-hello-world/build/helloworld_qemu-x86_64 2>&1 | { grep -v "Empty loadable segment detected" || true; }

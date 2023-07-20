@@ -1,0 +1,25 @@
+<domain type='qemu'>
+    <name>helloworld_uk</name>
+     <memory unit='KiB'>32000</memory>
+    <currentMemory unit='KiB'>32000</currentMemory>
+    <vcpu placement='static'>1</vcpu>
+    <os>
+        <type arch='x86_64' machine='pc-i440fx-focal'>hvm</type>
+        <kernel>/home/ubuntu/hw/UKraft/work/Unikraft/task2/00-hello-world/build/helloworld_qemu-x86_64</kernel>
+        <boot dev='hd'/>
+    </os>
+    <cpu mode='custom' match='exact' check='none'>
+        <model fallback='forbid'>qemu64</model>
+    </cpu>
+    <clock offset='utc' adjustment='reset'/>
+    <on_poweroff>destroy</on_poweroff>
+    <on_reboot>restart</on_reboot>
+    <on_crash>preserve</on_crash>
+    <devices>
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+        <console type='pty'>
+            <target type='serial' port='0'/>
+        </console>
+        <graphics port="-1" type="vnc" />
+    </devices>
+</domain>
